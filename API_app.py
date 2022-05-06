@@ -9,7 +9,7 @@ os.chdir(os.path.dirname(__file__))
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
-model = pickle.load(open("ad_model.pkl","rb"))
+model = pickle.load(open("data/model/hm_model.pkl","rb"))
 
 @app.route("/", methods=["GET"])
 def home():
